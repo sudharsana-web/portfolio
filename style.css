@@ -85,9 +85,16 @@ border-radius:10px;
 box-shadow:0 3px 10px rgba(0,0,0,0.1);
 }
 
+.figma-frame{
+margin-top:20px;
+border-radius:10px;
+overflow:hidden;
+}
+
 footer{
 background:#111;
 color:white;
 padding:20px;
 }
+
 
