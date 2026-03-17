@@ -96,4 +96,115 @@ text-align:center;
 padding:20px;
 }
 
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #fdf8f5;
+  color: #2a1a0e;
+}
+
+.page-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  font-size: 13px;
+  color: #9e7c60;
+  margin-bottom: 2rem;
+}
+.breadcrumb a {
+  color: #9e7c60;
+  text-decoration: none;
+}
+.breadcrumb a:hover { color: #c0392b; }
+
+/* Page header */
+.page-header { margin-bottom: 2.5rem; }
+.page-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  color: #1a0e08;
+  line-height: 1.15;
+}
+.page-header p {
+  margin-top: 0.6rem;
+  font-size: 15px;
+  color: #7a5c46;
+  max-width: 520px;
+  line-height: 1.7;
+}
+
+/* Gallery grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 0.5px solid #e8d5c4;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(180, 80, 40, 0.12);
+}
+
+/* Card image */
+.card-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+/* Card body */
+.card-body {
+  padding: 14px 16px 16px;
+}
+.card-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: #fdecea;
+  color: #b03020;
+  border-radius: 5px;
+  padding: 3px 8px;
+  margin-bottom: 8px;
+}
+.card-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a0e08;
+  line-height: 1.4;
+}
+.card-sub {
+  font-size: 12px;
+  color: #9e7c60;
+  margin-top: 4px;
+}
+
+/* Back link */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 2.5rem;
+  font-size: 14px;
+  font-weight: 500;
+  color: #c0392b;
+  text-decoration: none;
+  transition: gap 0.2s;
+}
+.back-link:hover { gap: 10px; }
